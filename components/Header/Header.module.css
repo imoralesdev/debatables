@@ -1,0 +1,30 @@
+.header {
+    border-bottom: solid 2px #C0C0C0;
+}
+
+.header-logo {
+    display: block;
+    text-align: center;
+}
+
+.header-logo > svg {
+    width: auto;
+    height: 60px;
+}
+
+.header-menu {
+    position: absolute;
+    top: 24px;
+    left: 12px;
+}
+
+.header-menu span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #0F0C89;
+    border-radius: 3px;
+    z-index: 1;
+}

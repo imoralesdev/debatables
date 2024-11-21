@@ -1,0 +1,118 @@
+.vote-swipe {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #C8C8C8;
+    height: 102px;
+    padding: 10px 0;
+  }
+  
+  .vote-swipe__header {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  
+  .vote-swipe__test-value {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  
+  .vote-swipe__test-value.vote-swipe__test-value-disable {
+    display: none;
+  }
+  
+  .vote-swipe__header-text {
+    width: 100%;
+    user-select: none;
+  }
+  
+  .vote-swipe__header-text span {
+    display: block;
+    margin: auto -4px;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  
+  .vote-swipe__range {
+    position: relative;
+    border-radius: 0px;
+    background: #FFF;
+    height: 0;
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  
+  .vote-swipe__range-no {
+    display: inline-block;
+    width: 60px;
+    position: absolute;
+    left: -34px;
+    top: 0px;
+    z-index: 1;
+    background-color: #FFF;
+    border-radius: 30px;
+    border: 0;
+  }
+  
+  .vote-swipe__range-yes {
+    display: inline-block;
+    width: 60px;
+    position: absolute;
+    right: -24px;
+    top: 0px;
+    z-index: 1;
+    background-color: #FFF;
+    border-radius: 30px;
+    border: 0;
+  }
+  
+  .vote-swipe__guide-line {
+    border-radius: 0px;
+    position: absolute;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+  }
+  
+  .vote-swipe__range-line {
+    font-size: 0;
+    position: absolute;
+    top: 5px;
+    z-index: 0;
+    width: 100%;
+  }
+  
+  .vote-swipe__range-line svg {
+    height: 46px;
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .vote-swipe__pointer {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transform: translate(-50%) translateY(-10px);
+    z-index: 2;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .vote-swipe__pointer-background {
+    display: inline-block;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 48.5%;
+    transform: translateX(-50%);
+    background: #FFF;
+    border-radius: 30px;
+  }
