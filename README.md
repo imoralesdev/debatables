@@ -3,7 +3,7 @@
 Debatable is a registered concept designed to create a social media space for spirited, respectful debates on the latest U.S. news. Drawing inspiration from diverse outlets like Fox News and CNN, it champions free speech while fostering civil discussions.
 
 [Watch the Demo](...)
-[Live website here]((https://debatables-nine.vercel.app/))
+[Live website here](https://debatables-nine.vercel.app/)
 
 ## Table of Contents
 * [Images](#images)
