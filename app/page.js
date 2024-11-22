@@ -50,7 +50,7 @@ const posts = [
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div>
         <Stories />
       </div>
@@ -61,6 +61,6 @@ export default function Home() {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }

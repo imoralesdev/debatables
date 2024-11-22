@@ -8,7 +8,7 @@ import SvgIcon from '@/components/SvgIcon';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-    const { setCreateModal } = useAppContext(); // Use context
+    const { setCreateModal } = useAppContext();
 
     return (
         <footer className={styles.footer}>

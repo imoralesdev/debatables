@@ -1,35 +1,44 @@
-'use client';
+"use client";
 
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState, useContext } from "react";
 
 const AppContext = createContext();
 
-// Custom hook to use the AppContext
-export const useAppContext = () => {
-    return useContext(AppContext);
-};
-
 export const AppProvider = ({ children }) => {
-    const [showCreateModal, setShowCreateModal] = useState(false);
-    const [showShareModal, setShowShareModal] = useState(false);
-    const [showReplyModal, setShowReplyModal] = useState(false);
+    const [state, setState] = useState({
+        showCreateModal: false,
+        showMenu: false
+    });
 
-    const toggleCreateModal = () => setShowCreateModal(prev => !prev);
-    const toggleShareModal = () => setShowShareModal(prev => !prev);
-    const toggleReplyModal = () => setShowReplyModal(prev => !prev);
+    const setCreateModal = () => {
+        setState((prev) => ({
+            ...prev,
+            showCreateModal: !prev.showCreateModal,
+        }));
+    };
+
+    const setMenu = () => {
+        setState((prev) => ({
+            ...prev,
+            showMenu: !prev.showMenu,
+        }));
+    };
+
 
     return (
-        <AppContext.Provider
-            value={{
-                showCreateModal,
-                toggleCreateModal,
-                showShareModal,
-                toggleShareModal,
-                showReplyModal,
-                toggleReplyModal
-            }}
-        >
+        <AppContext.Provider value={{ 
+            ...state, 
+            setCreateModal,
+            setMenu }}>
             {children}
         </AppContext.Provider>
     );
+};
+
+export const useAppContext = () => {
+    const context = useContext(AppContext);
+    if (!context) {
+        throw new Error("useAppContext must be used within an AppProvider");
+    }
+    return context;
 };

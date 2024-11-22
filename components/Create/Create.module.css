@@ -1,0 +1,241 @@
+.create {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.create-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.create-close__container {
+    height: 20px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: rgb(128, 128, 128);
+    transform: rotate(45deg);
+    z-index: 1;
+    border-radius: 40px;
+}
+
+.create-close__container > div {
+    height: 20px;
+    width: 2px;
+    background-color: rgb(128, 128, 128);
+    transform: rotate(90deg);
+    z-index: 2;
+    border-radius: 40px;
+}
+
+.create__container {
+    display: block;
+    border-radius: 10px;
+    width: 96%;
+    max-width: 100%;
+    height: 550px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.create-header {
+    padding: 12px 16px;
+}
+
+.create-header__user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.create-header__user-details {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 10px;
+}
+
+.create-header__user-name {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding: 14px 0 4px;
+}
+
+.create-header__select-feeds {
+    
+}
+
+.create-header__select-feeds > li {
+    display: inline-block;
+}
+
+.create-header__select-feed {
+    color: #808080;
+    border: solid 1px #808080;
+    font-size: 16px;
+    padding: 0 28px 0 4px;
+    margin-right: 6px;
+    text-align: left;
+}
+
+.create-header__select-feeds li {
+    position: relative;
+}
+
+.create-header__select-privacy {
+    color: #808080;
+    border: solid 1px #808080;
+    font-size: 16px;
+    padding: 0 28px 0 4px;
+    margin-right: 6px;
+    text-align: left;
+}
+
+.create-text {
+    margin: 0px 16px;
+    border: solid 1px #D3D3D3;
+    border-radius: 10px;
+}
+
+.create-text__textarea {
+    color: #808080;
+    height: 88px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    padding: 10px 10px 0;
+    margin: 0;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.create-text__hashtag {
+    color: #0F0C89;
+    width: 100%;
+    margin: 0;
+    padding: 2px 8px;
+    background-color: #D3D3D3;
+    border-radius: 2px 2px 10px 10px;
+    border: solid 1px #D3D3D3;
+}
+
+.create-media {
+    margin: 0px 16px;
+}
+
+.create-media__type {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.create-media__type-lists {
+    color: #0F0C89;
+}
+
+.create-media__type-list {
+    color: #0F0C89;
+    margin: 10px 0 0;
+}
+
+.create-media__type-list > svg {
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.create-media__type-list > span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.create-media__submit {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    margin: 16px 0;
+}
+
+.create-media__header {
+    width: 100%;
+}
+
+.create-media__header svg {
+    width: 32px;
+    padding: 8px 0;
+}
+
+.create-media__header span {
+    vertical-align: top;
+    padding: 15px 8px;
+    display: inline-block;
+}
+
+.create-media__debate-format-title {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #0F0C89;
+}
+
+.create-media__debate-format-item svg {
+    width: 100%;
+    height: 80px;
+}
+
+.create-media__debate-format-item {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.create-media__debate-format-item span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #0F0C89;
+    font-weight: bold;
+}
+
+.create-title {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    color: #0F0C89;
+}
+/* Mobile First */
+@media (min-width: 480px) {
+    .create__container {
+        width: 460px;
+    }
+}

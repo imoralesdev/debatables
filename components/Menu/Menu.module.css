@@ -1,0 +1,54 @@
+.menu {
+  height: calc(100vh - 71px);
+}
+
+.menu__title {
+  padding: 10px 6px;
+}
+
+.menu__nav {
+  padding: 12px;
+}
+
+.menu__nav-item a {
+  color: #0f0c89;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user {
+  padding: 0 12px 12px 12px;
+  border-bottom: solid 1px #c0c0c0;
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-name {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 10px;
+}
+
+.user-name__text {
+  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  padding: 14px 0 0;
+}
+
+.user-profile {
+  color: #808080;
+  font-size: 16px;
+  text-decoration: none;
+}
